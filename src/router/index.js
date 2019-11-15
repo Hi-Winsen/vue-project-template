@@ -5,7 +5,7 @@ import beforeEach from './beforeEach'
 
 Vue.use(Router)
 
-const routes = []
+export const routes = []
 
 const routerContext = require.context(
   '@/views/',

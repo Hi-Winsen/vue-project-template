@@ -4,6 +4,17 @@ module.exports = {
     node: true
   },
   extends: ["plugin:vue/essential"],
+  parserOptions: {
+    parser: "babel-eslint"
+  },
+  overrides: [
+    {
+      files: ["**/__tests__/*.{j,t}s?(x)"],
+      env: {
+        mocha: true
+      }
+    }
+  ],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
@@ -299,16 +310,5 @@ module.exports = {
     'object-curly-spacing': [1, 'never'],
     // 强制数组方括号中使用一致的空格（规范）
     'array-bracket-spacing': [2, 'never']
-  },
-  parserOptions: {
-    parser: "babel-eslint"
-  },
-  overrides: [
-    {
-      files: ["**/__tests__/*.{j,t}s?(x)"],
-      env: {
-        mocha: true
-      }
-    }
-  ]
+  }
 };

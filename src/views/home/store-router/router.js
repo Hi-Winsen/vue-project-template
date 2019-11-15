@@ -7,14 +7,20 @@ export default [
     path: '/home',
     name: 'home',
     component: () => import('@/views/home/Home.index.vue'),
-    meta: {requiresAuth: true},
-    children: [
-      {
-        path: 'about',
-        name: 'homeName-about',
-        component: () => import('@/views/home/sub-pages/about/About.index.vue'),
-        meta: {requiresAuth: true}
-      }
-    ]
+    meta: {
+      requiresAuth: true,
+      title: '首页'
+    }
+    // children: [
+    //   {
+    //     path: 'about',
+    //     name: 'homeName-about',
+    //     component: () => import('@/views/home/pages/about/About.index.vue'),
+    //     meta: {
+    //       requiresAuth: true,
+    //       title: '关于我'
+    //     }
+    //   }
+    // ]
   }
 ]
