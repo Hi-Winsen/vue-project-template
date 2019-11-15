@@ -57,7 +57,7 @@ const httpResponseStatus = {
   508: `loop detected`,
   510: `not extended`,
   511: `network authentication required`
-};
+}
 
 // '400请求错误'
 // '404请求地址出错'
@@ -66,9 +66,9 @@ const httpResponseStatus = {
 // '502网关错误'
 // '504网关超时'
 
-const weNeedStatusArr = [400, 401, 404, 408, 500, 502, 504];
-let weNeedStatus = {};
+const weNeedStatusArr = [400, 401, 404, 408, 500, 502, 504]
+let weNeedStatus = {}
 weNeedStatusArr.forEach(status => {
-  weNeedStatus[status] = httpResponseStatus[status];
-});
-export default weNeedStatus;
+  weNeedStatus[status] = httpResponseStatus[status]
+})
+export default weNeedStatus

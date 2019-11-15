@@ -1,22 +1,22 @@
-import Vue from "vue";
-import Router from "vue-router";
+import Vue from 'vue'
+import Router from 'vue-router'
 
-Vue.use(Router);
+Vue.use(Router)
 
-const routes = [];
+const routes = []
 
 const routerContext = require.context(
-  "@/views/",
+  '@/views/',
   true,
   /\/[\w-]+\/store-router\/router.js$/
-);
+)
 routerContext.keys().forEach(modules => {
-  let moduleValue = routerContext(modules).default;
-  routes.push(...moduleValue);
-});
+  const moduleValue = routerContext(modules).default
+  routes.push(...moduleValue)
+})
 
 export default new Router({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
-});
+})

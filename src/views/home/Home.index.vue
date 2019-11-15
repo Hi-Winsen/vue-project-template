@@ -7,30 +7,30 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
-import HelloWorld from "@/components/HelloWorld";
+import {mapActions} from 'vuex'
+import HelloWorld from '@/components/HelloWorld'
 export default {
   components: {
     HelloWorld
   },
   data() {
-    return {};
+    return {}
   },
   created() {
-    this._ABCDEFG();
+    this._ABCDEFG()
   },
   methods: {
-    ...mapActions("home", ["abc"]),
+    ...mapActions('home', ['abc']),
     async _ABCDEFG() {
       console.info(
-        "%c这个是模拟接口请求，一般都会报错，因为接口是乱写的，改成需要代理的域名和实际存在的接口即可",
-        "color: #42b983;"
-      );
-      const res = await this.abc();
-      console.log(res);
+        '%c这个是模拟接口请求，一般都会报错，因为接口是乱写的，改成需要代理的域名和实际存在的接口即可',
+        'color: #42b983;'
+      )
+      const res = await this.abc()
+      console.log(res)
     }
   }
-};
+}
 </script>
 
 <style lang="less" scoped>
