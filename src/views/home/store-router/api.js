@@ -1,4 +1,4 @@
-import actionsFactory from '@/axios/actionsFactory'
+import actionsFactory from '@/utils/axios/actionsFactory'
 
 const apis = {
   abc: `/aaa/bbb/ccc/ddd/eee.json`

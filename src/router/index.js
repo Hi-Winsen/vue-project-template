@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import afterEach from './afterEach'
+import beforeEach from './beforeEach'
 
 Vue.use(Router)
 
@@ -15,8 +17,13 @@ routerContext.keys().forEach(modules => {
   routes.push(...moduleValue)
 })
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
+
+router.beforeEach(beforeEach)
+router.afterEach(afterEach)
+
+export default router
