@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>这个是刚新建的 about 组件，记得给这里填写新内容</h1>
+  <div class="graph-circular">
+    <div>图表</div>
   </div>
 </template>
 
@@ -8,11 +8,13 @@
 export default {
   data() {
     return {
+      myChart: null,
+      data: null
     }
   }
 }
 </script>
 
 <style lang="less" scoped>
-  .about {}
+  .graph-circular {}
 </style>

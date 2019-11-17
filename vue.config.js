@@ -1,10 +1,9 @@
 module.exports = {
   devServer: {
-    proxy: {
-      '/xxxx': {
-        target: 'https://www.qq.com', // target host
-        changeOrigin: true // needed for virtual hosted sites
-      }
-    }
+    // proxy: {
+    //   '/': {
+    //     target: '127.0.0.1:10086'
+    //   }
+    // }
   }
 }

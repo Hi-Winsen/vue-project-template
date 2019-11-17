@@ -1,18 +1,12 @@
 <template>
   <div class="home">
-    <h1>这个是刚新建的 home 组件，记得给这里填写新内容</h1>
-    <hello-world />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 import {mapActions} from 'vuex'
-import HelloWorld from '@/components/HelloWorld'
 export default {
-  components: {
-    HelloWorld
-  },
   data() {
     return {}
   },

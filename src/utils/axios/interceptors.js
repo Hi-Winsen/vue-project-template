@@ -5,6 +5,7 @@ async function requestError(error) {
   return Promise.reject(error)
 }
 async function response(res) {
+  console.log(res)
   return res
 }
 async function responseError(error) {

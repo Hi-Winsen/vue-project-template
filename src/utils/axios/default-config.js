@@ -6,7 +6,7 @@ import {isObject} from '@/utils'
 // -----------------------------------------------
 // -----------------------------------------------
 const defaultOptions = {
-  baseURL: '/',
+  baseURL: '',
   timeout: 60000,
   headers: {
     post: {
@@ -25,7 +25,7 @@ const defaultOptions = {
 // -----------------------------------------------
 // -----------------------------------------------
 const commonParams = {
-  source: '这里是需要修改的每个接口都有的公共字段'
+  source: ''
 }
 // 每个接口都可能需要一些默认请求参数
 export function addCommonParams(params = {}) {

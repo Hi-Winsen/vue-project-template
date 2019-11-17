@@ -1,6 +1,6 @@
 import actionsFactory from '@/utils/axios/actionsFactory'
 
 const apis = {
-  abc: `/aaa/bbb/ccc/ddd/eee.json`
+  getGraphData: `http://127.0.0.1:10086/graph`
 }
 export default actionsFactory(apis)

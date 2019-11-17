@@ -9,12 +9,12 @@ export default [
     },
     children: [
       {
-        path: 'about',
-        name: 'homeName-about',
-        component: () => import('@/views/echarts/pages/about/About.index.vue'),
+        path: 'graph-circular',
+        name: 'echarts-graph-circular',
+        component: () => import('@/views/echarts/pages/graph-circular/GraphCircular.index.vue'),
         meta: {
           requiresAuth: true,
-          title: '图表信息'
+          title: '关系图标'
         }
       }
     ]

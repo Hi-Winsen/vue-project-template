@@ -28,9 +28,13 @@ export default {
 
 <style lang="less" scoped>
 #app {
+  width: 100%;
   min-height: 100%;
   text-align: center;
   color: #2c3e50;
+}
+.el-container {
+  height: 100%;
 }
 /deep/ .el-header {
   padding: 0;

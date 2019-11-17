@@ -80,17 +80,18 @@ export default {
   methods: {
     resolvePath(first, second) {
       if (second[0] === '/') return first + second
-      else return first + second.slice(1)
+      else return first + '/' + second
     }
   }
 }
 </script>
 
 <style lang="less" scoped>
+  .el-menu {
+    height: 100%;
+    text-align: left;
+  }
   a {
     display: block;
-  }
-  a:hover {
-    text-decoration: none;
   }
 </style>
